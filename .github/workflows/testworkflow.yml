@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - uses: hexlet-components/hello-from-hexlet-action@release
       - run: make setup
       - run: make test
       - run: make lint
